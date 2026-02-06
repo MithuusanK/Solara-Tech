@@ -1,0 +1,306 @@
+/* Feature Card */
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.featureCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.iconWrapper svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-white);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.featureTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.featureDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Info Card */
+.infoCard {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.value {
+  display: block;
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.label {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.infoDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+/* Service Card */
+.serviceCard {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.serviceCard:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.serviceIcon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-md);
+}
+
+.serviceIcon svg,
+.serviceIcon img {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+}
+
+.serviceContent {
+  flex: 1;
+}
+
+.serviceTitle {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.serviceDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+.serviceArrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.serviceCard:hover .serviceArrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.serviceArrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Step Card */
+.stepCard {
+  position: relative;
+  padding: var(--spacing-xl);
+  padding-left: var(--spacing-3xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-primary);
+}
+
+.stepNumber {
+  position: absolute;
+  top: var(--spacing-xl);
+  left: calc(var(--spacing-xl) * -1 - 20px);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  border-radius: var(--radius-full);
+}
+
+.stepTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.stepDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Image Card */
+.imageCard {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-gray-100);
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 50%);
+}
+
+.imageContent {
+  padding: var(--spacing-lg);
+}
+
+.imageTitle {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.imageDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+/* Value Card */
+.valueCard {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.valueIcon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-lg);
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-full);
+}
+
+.valueIcon svg,
+.valueIcon img {
+  width: 36px;
+  height: 36px;
+  color: var(--color-primary);
+}
+
+.valueTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.valueDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .serviceCard {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .serviceArrow {
+    display: none;
+  }
+
+  .stepCard {
+    padding-left: var(--spacing-xl);
+    border-left: none;
+    border-top: 4px solid var(--color-primary);
+  }
+
+  .stepNumber {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: var(--spacing-md);
+  }
+}
