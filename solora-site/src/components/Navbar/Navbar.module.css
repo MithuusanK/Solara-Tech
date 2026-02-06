@@ -44,7 +44,7 @@
 .logoText {
   font-size: var(--fs-xl);
   font-weight: var(--fw-bold);
-  color: var(--color-primary);
+  color: #FF9046;
 }
 
 /* Desktop Navigation */

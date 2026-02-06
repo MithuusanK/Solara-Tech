@@ -85,6 +85,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className={styles.logo} aria-label="Solora Home">
             <img src={logo} alt="Solora" className={styles.logoImage} />
+            <span className={styles.logoText}>Solora</span>
           </Link>
 
           {/* Desktop Navigation */}

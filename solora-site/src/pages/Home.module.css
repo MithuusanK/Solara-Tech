@@ -49,14 +49,14 @@
 
 /* Pioneering Section */
 .pioneering {
-  padding: var(--spacing-5xl) 0;
+  padding: var(--spacing-4xl) 0;
   background-color: var(--color-white);
 }
 
 .pioneeringGrid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: var(--spacing-4xl);
+  gap: var(--spacing-3xl);
   align-items: start;
 }
 
@@ -155,13 +155,13 @@
 
 /* Solution Framework Section */
 .solutionFramework {
-  padding: var(--spacing-5xl) 0;
+  padding: var(--spacing-4xl) 0;
   background-color: var(--color-gray-50);
 }
 
 .frameworkHeader {
   text-align: center;
-  margin-bottom: var(--spacing-3xl);
+  margin-bottom: var(--spacing-2xl);
 }
 
 .frameworkTitle {
@@ -182,7 +182,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-3xl);
+  margin-bottom: var(--spacing-2xl);
 }
 
 .pillarCard {
@@ -240,14 +240,14 @@
 
 /* Challenges Section */
 .challenges {
-  padding: var(--spacing-5xl) 0;
+  padding: var(--spacing-4xl) 0;
   background-color: var(--color-gray-50);
 }
 
 .challengesHeader {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto var(--spacing-3xl);
+  margin: 0 auto var(--spacing-2xl);
 }
 
 .headerDescription {
@@ -265,13 +265,13 @@
 
 /* Services Section */
 .services {
-  padding: var(--spacing-5xl) 0;
+  padding: var(--spacing-4xl) 0;
   background-color: var(--color-white);
 }
 
 .servicesHeader {
   text-align: center;
-  margin-bottom: var(--spacing-3xl);
+  margin-bottom: var(--spacing-2xl);
 }
 
 .servicesGrid {
@@ -339,6 +339,159 @@
   font-size: var(--fs-lg);
 }
 
+/* Approach Section */
+.approach {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-gray-50);
+}
+
+.approachHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.approachSubtitle {
+  font-size: var(--fs-lg);
+  color: var(--color-gray-600);
+  margin: var(--spacing-sm) 0 0;
+}
+
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.approachCard {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background-color: #F5F5F5;
+  border: 1px solid #25632D;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.approachIcon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+}
+
+.approachIcon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+
+.approachCardTitle {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.approachCardDesc {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* How We Work Section */
+.howWeWork {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-white);
+}
+
+.howWeWorkGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.howWeWorkContent {
+  padding-right: var(--spacing-2xl);
+}
+
+.steps {
+  margin: var(--spacing-xl) 0;
+  position: relative;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  bottom: 30px;
+  width: 2px;
+  background-color: var(--color-gray-200);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+  position: relative;
+}
+
+.stepNumber {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.stepTitle {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.processButton {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: #25632D;
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.processButton:hover {
+  background-color: #1d4f24;
+}
+
+.howWeWorkImage {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.howWeWorkImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Responsive */
 @media (max-width: 1279px) {
   .pioneeringGrid {
@@ -364,6 +517,10 @@
   .pillarCard {
     height: 350px;
   }
+
+  .approachGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1023px) {
@@ -379,6 +536,19 @@
   .pioneeringContent {
     padding-right: 0;
     order: 1;
+  }
+
+  .howWeWorkGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .howWeWorkContent {
+    padding-right: 0;
+  }
+
+  .approachGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .pioneeringImages {
@@ -475,5 +645,25 @@
 
   .services {
     padding: var(--spacing-3xl) 0;
+  }
+
+  .approachGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .howWeWork {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .howWeWorkGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .howWeWorkImage {
+    order: -1;
   }
 }
