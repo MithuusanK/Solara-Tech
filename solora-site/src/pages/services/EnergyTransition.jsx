@@ -569,17 +569,22 @@ const EnergyTransition = () => {
       <section className={styles.partnersSection}>
         <div className={styles.container}>
           <div className={styles.partnersGrid}>
-            <h2 className={styles.partnersTitle}>Solora's Project Partners</h2>
-            <p className={styles.partnersText}>
-              Solora works closely with partners such as Grassland Organics, DENBA Co., UBC researchers,
-              and municipal, regional, and Indigenous governments to advance sustainable waste and energy
-              innovations. This partner network is rapidly expanding as we engage with more technology
-              providers across Asia, Europe, and North America.
-            </p>
+            <div className={styles.partnersContent}>
+              <h2 className={styles.partnersTitle}>Solora's Project Partners</h2>
+              <p className={styles.partnersText}>
+                Solora works closely with partners such as Grassland Organics, DEBNA Co., UBC Researchers, and municipal, regional, and Indigenous governments to advance sustainable waste and energy innovations. This partner network is rapidly expanding as we engage with more technology providers across Asia, Europe, and North America.
+              </p>
+            </div>
             <div className={styles.partnersLogos}>
-              <img src={ubcLogo} alt="UBC" className={styles.partnerLogo} />
-              <img src={grasslandLogo} alt="Grassland Organics" className={styles.partnerLogo} />
-              <span className={styles.partnerLogoText}>DEBNA</span>
+              <div className={styles.partnerLogo}>
+                <img src={ubcLogo} alt="UBC" className={styles.ubcLogoImg} />
+              </div>
+              <div className={styles.partnerLogo}>
+                <img src={grasslandLogo} alt="Grassland Organics" className={styles.partnerLogoImg} />
+              </div>
+              <div className={styles.partnerLogo}>
+                <span className={styles.debnaText}>DEBNA</span>
+              </div>
             </div>
           </div>
         </div>
