@@ -1,26 +1,23 @@
 .footer {
   background-color: #25632D;
   color: var(--color-gray-300);
-  padding: var(--spacing-3xl) 0 var(--spacing-xl);
+  padding: 0;
 }
 
 .container {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-xl);
-}
-
-.innerBox {
-  border: 1px solid #4A8B57;
-  border-radius: 8px;
-  padding: var(--spacing-2xl);
-  margin-bottom: var(--spacing-xl);
+  width: 100%;
+  background-color: #25632D;
+  border-top: 4px solid #c08a3e;
+  padding: 0 var(--spacing-2xl) var(--spacing-xl);
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: var(--spacing-2xl);
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding-top: var(--spacing-2xl);
 }
 
 /* Brand Column */
@@ -116,6 +113,13 @@
 }
 
 /* Bottom Section */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: var(--spacing-2xl) auto var(--spacing-lg);
+  max-width: var(--content-width);
+}
+
 .bottom {
   text-align: center;
 }
@@ -128,8 +132,8 @@
 
 /* Responsive */
 @media (max-width: 1023px) {
-  .innerBox {
-    padding: var(--spacing-xl);
+  .container {
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
   }
 
   .grid {
@@ -152,8 +156,8 @@
     padding: 0 var(--spacing-md);
   }
 
-  .innerBox {
-    padding: var(--spacing-lg);
+  .container {
+    padding: 0 var(--spacing-md) var(--spacing-lg);
   }
 
   .grid {
