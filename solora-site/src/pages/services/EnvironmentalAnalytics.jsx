@@ -1,8 +1,6 @@
 import Hero from '../../components/Hero/Hero';
 import CTA from '../../components/CTA/CTA';
 import styles from './ServicePage.module.css';
-import heroImage from '../../assets/Hero Section.png';
-import introImage from '../../assets/Image-1.png';
 
 const EnvironmentalAnalytics = () => {
   const benefits = [
@@ -94,14 +92,93 @@ const EnvironmentalAnalytics = () => {
 
   return (
     <div className={styles.servicePage}>
-      {/* Hero Section */}
-      <Hero
-        label="Service"
-        title="Environmental Analytics"
-        description="Data-driven insights for environmental monitoring, compliance, and decision-making."
-        primaryCTA={{ text: 'Get Started', href: '/contact' }}
-        minHeight="500px"
-      />
+      {/* Figma-style Hero Section */}
+      <section
+        style={{
+          position: 'relative',
+          width: '100vw',
+          left: '50%',
+          right: '50%',
+          marginLeft: '-50vw',
+          marginRight: '-50vw',
+          minHeight: '600px',
+          backgroundImage: 'url(/src/assets/env-ana-hero.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          paddingTop: '48px',
+          paddingBottom: '48px',
+        }}
+      >
+        <div
+          style={{
+            background: 'rgba(37, 99, 45, 0.8)', // #25632D with 80% opacity
+            color: '#fff',
+            maxWidth: 600,
+            marginLeft: '5vw',
+            padding: '2.5rem 2.5rem 2.5rem 2.5rem',
+            borderRadius: '1.5rem',
+            boxShadow: '0 4px 32px rgba(0,0,0,0.12)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem',
+          }}
+        >
+          <span style={{
+            color: '#B6E2C6',
+            fontSize: 14,
+            fontWeight: 600,
+            letterSpacing: 2,
+            textTransform: 'uppercase',
+            marginBottom: 8,
+          }}>
+            ENVIRONMENTAL ANALYTICS
+          </span>
+          <h1 style={{ fontSize: 36, fontWeight: 700, margin: 0, lineHeight: 1.15, color: '#fff' }}>
+            Leverage Data & Market Clarity That Moves Projects Forward
+          </h1>
+          <p style={{ fontSize: 18, color: '#E6F2EC', margin: 0 }}>
+            Turn complex environmental data into clear, actionable insights that guide policy, technology adoption, and investment strategies across Canada’s evolving waste-to-energy landscape.
+          </p>
+          <div style={{ display: 'flex', gap: 16, marginTop: 8 }}>
+            <a
+              href="/contact"
+              style={{
+                background: '#fff',
+                color: '#103624',
+                fontWeight: 600,
+                padding: '0.75rem 1.5rem',
+                borderRadius: 6,
+                textDecoration: 'none',
+                fontSize: 16,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                border: 'none',
+                transition: 'background 0.2s',
+              }}
+            >
+              Speak With Our Team
+            </a>
+            <a
+              href="/how-we-work"
+              style={{
+                background: 'transparent',
+                color: '#fff',
+                fontWeight: 600,
+                padding: '0.75rem 1.5rem',
+                borderRadius: 6,
+                textDecoration: 'none',
+                fontSize: 16,
+                border: '2px solid #fff',
+                transition: 'background 0.2s, color 0.2s',
+              }}
+            >
+              Explore How We Work
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Intro Section */}
       <section className={styles.introSection}>
@@ -143,7 +220,9 @@ const EnvironmentalAnalytics = () => {
               </div>
             </div>
             <div className={styles.introImage}>
-              <img src={introImage} alt="Environmental Data Analytics" className={styles.image} />
+              <div className={styles.imagePlaceholder}>
+                Environmental Data Analytics
+              </div>
             </div>
           </div>
         </div>

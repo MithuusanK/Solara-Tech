@@ -283,6 +283,99 @@
   flex-shrink: 0;
 }
 
+/* Importance Section - Environmental Analytics */
+.importanceSection {
+  padding: var(--spacing-5xl) 0;
+  background: linear-gradient(180deg, #f5f7f0 0%, #e8ece0 100%);
+}
+
+.importanceHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.importanceTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.importanceTitleAccent {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: #BF6C35;
+  margin: 0;
+}
+
+.importanceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.importanceCard {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: 4px 0 0 #BF6C35, var(--shadow-sm);
+}
+
+
+
+.importanceCardIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.importanceCardIcon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+
+.importanceCardTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.importanceCardDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Overview Section - Environmental Analytics */
+.overviewSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.overviewImageWrapper {
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.overviewImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overviewContent {
+  max-width: 800px;
+}
+
 /* Waste Management Hero Section */
 .wasteHero {
   position: relative;
@@ -1012,7 +1105,9 @@
   .introSection,
   .benefitsSection,
   .useCasesSection,
-  .visualSection {
+  .visualSection,
+  .importanceSection,
+  .overviewSection {
     padding: var(--spacing-3xl) 0;
   }
 
@@ -1022,6 +1117,15 @@
 
   .benefitsGrid {
     grid-template-columns: 1fr;
+  }
+
+  .importanceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .importanceTitle,
+  .importanceTitleAccent {
+    font-size: var(--fs-2xl);
   }
 
   .statsGrid {

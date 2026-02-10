@@ -11,6 +11,7 @@ const Hero = ({
   backgroundVideo,
   minHeight = '600px',
   align = 'left',
+  variant = 'default',
 }) => {
   // Default placeholder background if no image or video provided
   const bgStyle = backgroundImage && !backgroundVideo
@@ -21,7 +22,7 @@ const Hero = ({
 
   return (
     <section 
-      className={styles.hero} 
+      className={`${styles.hero} ${variant === 'gradientBox' ? styles.gradientBoxHero : ''}`} 
       style={{ ...bgStyle, minHeight }}
     >
       {backgroundVideo && (
@@ -35,9 +36,9 @@ const Hero = ({
           <source src={backgroundVideo} type="video/mp4" />
         </video>
       )}
-      <div className={styles.overlay}></div>
+      {variant !== 'gradientBox' && <div className={styles.overlay}></div>}
       <div className={`${styles.container} ${styles[align]}`}>
-        <div className={styles.content}>
+        <div className={`${styles.content} ${variant === 'gradientBox' ? styles.gradientBox : ''}`}>
           {label && <span className={styles.label}>{label}</span>}
           <h1 className={styles.title}>{title}</h1>
           {description && <p className={styles.description}>{description}</p>}
