@@ -185,11 +185,13 @@
 }
 
 .challengeIcon {
-  display: inline-block;
   width: 20px;
-  text-align: center;
-  color: var(--color-primary);
-  font-weight: var(--fw-bold);
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 

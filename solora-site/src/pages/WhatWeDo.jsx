@@ -50,7 +50,7 @@ const WhatWeDo = () => {
       description: 'Market data and insights to pitch the right buyers effectively.',
     },
     {
-      icon: new URL('../assets/investors.png', import.meta.url).href,
+      icon: new URL('../assets/investors_whatwedo.png', import.meta.url).href,
       title: 'Investors',
       description: 'Assessing the feasibility and market potential of emerging technologies.',
     },
@@ -60,7 +60,7 @@ const WhatWeDo = () => {
       description: 'Ensuring solutions align with community values and environmental stewardship.',
     },
     {
-      icon: new URL('../assets/policy.png', import.meta.url).href,
+      icon: new URL('../assets/policy_whatwedo.png', import.meta.url).href,
       title: 'Policy Analysts',
       description: 'Environmental analysis and data that require actionable, local environmental data.',
     },
@@ -103,11 +103,11 @@ const WhatWeDo = () => {
                 Clean energy and waste-to-resource technologies are evolving rapidly—but adoption isn't keeping pace. Communities and organizations are struggling with:
               </p>
               <ul className={styles.challengesList}>
-                <li><span className={styles.challengeIcon}>▲</span> Aging infrastructure and growing waste volumes</li>
-                <li><span className={styles.challengeIcon}>▲</span> Complex environmental regulations</li>
-                <li><span className={styles.challengeIcon}>●</span> Uncertain technology choices</li>
-                <li><span className={styles.challengeIcon}>◆</span> Increased pressure to meet sustainability goals</li>
-                <li><span className={styles.challengeIcon}>■</span> Limited access to local environmental data</li>
+                <li><img src={new URL('../assets/whatwedo1.png', import.meta.url).href} alt="" className={styles.challengeIcon} /> Aging infrastructure and growing waste volumes</li>
+                <li><img src={new URL('../assets/whatwedo2.png', import.meta.url).href} alt="" className={styles.challengeIcon} /> Complex environmental regulations</li>
+                <li><img src={new URL('../assets/whatwedo3.png', import.meta.url).href} alt="" className={styles.challengeIcon} /> Uncertain technology choices</li>
+                <li><img src={new URL('../assets/whatwedo4.png', import.meta.url).href} alt="" className={styles.challengeIcon} /> Increased pressure to meet sustainability goals</li>
+                <li><img src={new URL('../assets/whatwedo5.png', import.meta.url).href} alt="" className={styles.challengeIcon} /> Limited access to local environmental data</li>
               </ul>
               <div className={styles.calloutBox}>
                 <p>Solara bridges these gaps—ensuring innovation doesn't stall but instead creates meaningful, measurable change.</p>
