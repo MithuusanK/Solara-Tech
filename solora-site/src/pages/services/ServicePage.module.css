@@ -283,6 +283,785 @@
   flex-shrink: 0;
 }
 
+/* Importance Section - Environmental Analytics */
+.importanceSection {
+  padding: var(--spacing-5xl) 0;
+  background: linear-gradient(180deg, #f5f7f0 0%, #e8ece0 100%);
+}
+
+.importanceHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.importanceTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.importanceTitleAccent {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: #BF6C35;
+  margin: 0;
+}
+
+.importanceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.importanceCard {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: 4px 0 0 #BF6C35, var(--shadow-sm);
+}
+
+
+
+.importanceCardIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.importanceCardIcon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+
+.importanceCardTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.importanceCardDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Overview Section - Environmental Analytics */
+.overviewSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.overviewImageWrapper {
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.overviewImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overviewContent {
+  max-width: 800px;
+}
+
+/* Waste Management Hero Section */
+.wasteHero {
+  position: relative;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.wasteHeroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.wasteHeroContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+}
+
+.wasteHeroContent {
+  max-width: 600px;
+  background: rgba(19, 50, 23, 0.8);
+  padding: var(--spacing-xl);
+  border-radius: 12px;
+}
+
+.wasteHeroLabel {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+}
+
+.wasteHeroTitle {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--spacing-lg);
+}
+
+.wasteHeroDescription {
+  font-size: var(--fs-base);
+  color: var(--color-gray-200);
+  line-height: var(--lh-relaxed);
+  margin: 0 0 var(--spacing-xl);
+}
+
+.wasteHeroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.wasteHeroPrimaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: #FEFEFD;
+  color: var(--color-gray-900);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.wasteHeroPrimaryBtn:hover {
+  background-color: #e5e5e4;
+  transform: translateY(-2px);
+}
+
+.wasteHeroSecondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.wasteHeroSecondaryBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+}
+
+/* Waste Management Service Section */
+.wasteServiceSection {
+  background-color: var(--color-primary);
+  padding: var(--spacing-5xl) 0;
+}
+
+.wasteServiceContainer {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.wasteServiceLabel {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-md);
+}
+
+.wasteServiceTitle {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  margin: 0 0 var(--spacing-lg);
+}
+
+.wasteServiceDescription {
+  font-size: var(--fs-lg);
+  color: var(--color-gray-200);
+  line-height: var(--lh-relaxed);
+  max-width: 600px;
+  margin: 0 0 var(--spacing-xl);
+}
+
+.wasteServiceBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: var(--color-secondary);
+  color: var(--color-gray-900);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.wasteServiceBtn:hover {
+  background-color: #e09520;
+  transform: translateY(-2px);
+}
+
+/* Cost Reduction Section */
+.costReductionSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: #E9EFEA;
+}
+
+.costReductionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.costReductionTitle {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.costReductionSubtitle {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  color: #BF6C35;
+  margin: 0;
+}
+
+.costReductionGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.costReductionCard {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.costReductionIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+  margin: 0 auto var(--spacing-md);
+}
+
+.costReductionIcon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+
+.costReductionCardTitle {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.costReductionCardText {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Strategic Advantages Section */
+.strategicSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.strategicHeader {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto var(--spacing-4xl);
+}
+
+.strategicTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-md);
+}
+
+.strategicTitle .highlight {
+  color: #BF6C35;
+}
+
+.strategicTitle .highlightGreen {
+  color: #BF6C35;
+}
+
+.strategicSubtitle {
+  font-size: var(--fs-base);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+.strategicItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+  margin-bottom: var(--spacing-4xl);
+}
+
+.strategicItem:last-child {
+  margin-bottom: 0;
+}
+
+.strategicItemReverse {
+  direction: rtl;
+}
+
+.strategicItemReverse > * {
+  direction: ltr;
+}
+
+.strategicItemTitle {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: #25632D;
+  margin: 0 0 var(--spacing-md);
+}
+
+.strategicItemText {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0 0 var(--spacing-lg);
+}
+
+.strategicChecklist {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.strategicChecklistColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.strategicCheckItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+}
+
+.strategicCheckItem svg {
+  width: 16px;
+  height: 16px;
+  color: #25632D;
+  flex-shrink: 0;
+}
+
+.strategicImage {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.strategicImage .imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+}
+
+/* Clients Section */
+.clientsSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.clientsGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-3xl);
+  align-items: start;
+}
+
+.clientsTitle {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: #25632D;
+  margin: 0 0 var(--spacing-lg);
+  line-height: var(--lh-tight);
+}
+
+.clientsText {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+.clientsCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.clientCardImage {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+}
+
+.clientCardImage .imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-500);
+  font-size: var(--fs-xs);
+}
+
+.clientCardImage .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clientCardTitle {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: #25632D;
+  margin: 0 0 var(--spacing-xs);
+}
+
+.clientCardText {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Transformation Process Section */
+.transformationSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: #E9EFEA;
+}
+
+.transformationGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-4xl);
+  align-items: start;
+}
+
+.transformationTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--spacing-xl);
+}
+
+.transformationHighlight {
+  color: var(--color-gray-900);
+}
+
+.transformationOrange {
+  color: #BF6C35;
+}
+
+.transformationBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: #25632D;
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.transformationBtn:hover {
+  background-color: #1e5226;
+  transform: translateY(-2px);
+}
+
+.transformationSteps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.transformationStep {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.stepNumber {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25632D;
+  color: var(--color-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  border-radius: var(--radius-full);
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.stepText {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Expert Guidance Section */
+.expertSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.expertHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.expertTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.expertSubtitle {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  color: #BF6C35;
+  margin: 0;
+}
+
+.expertGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.expertCard {
+  padding: var(--spacing-lg);
+}
+
+.expertCardNumber {
+  display: inline-block;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: #BF6C35;
+  margin-bottom: var(--spacing-sm);
+}
+
+.expertCardTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.expertCardText {
+  font-size: var(--fs-base);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* Partners Section */
+.partnersSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.partnersGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.partnersTitle {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-md);
+}
+
+.partnersText {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+.partnersLogos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-3xl);
+}
+
+.partnerLogo {
+  flex-shrink: 0;
+}
+
+.partnerLogo .imagePlaceholder {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-md);
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+}
+
+.partnerLogo .image {
+  max-height: 60px;
+  width: auto;
+}
+
+.partnerLogoImg {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.ubcLogoImg {
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+.debnaText {
+  color: #000;
+  text-align: center;
+  font-family: var(--font-family-secondary, Inter, sans-serif);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* Waste CTA Section */
+.wasteCTASection {
+  position: relative;
+  padding: var(--spacing-5xl) 0;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.wasteCTAOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.wasteCTAContainer {
+  position: relative;
+  z-index: 1;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.wasteCTATitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  margin: 0 0 var(--spacing-xl);
+  line-height: var(--lh-tight);
+}
+
+.wasteCTABtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) var(--spacing-2xl);
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.wasteCTABtn:hover {
+  background-color: var(--color-gray-100);
+  transform: translateY(-2px);
+}
+
 /* Responsive */
 @media (max-width: 1279px) {
   .benefitsGrid {
@@ -326,7 +1105,9 @@
   .introSection,
   .benefitsSection,
   .useCasesSection,
-  .visualSection {
+  .visualSection,
+  .importanceSection,
+  .overviewSection {
     padding: var(--spacing-3xl) 0;
   }
 
@@ -338,6 +1119,15 @@
     grid-template-columns: 1fr;
   }
 
+  .importanceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .importanceTitle,
+  .importanceTitleAccent {
+    font-size: var(--fs-2xl);
+  }
+
   .statsGrid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
@@ -346,5 +1136,177 @@
   .useCaseItem {
     flex-direction: column;
     gap: var(--spacing-md);
+  }
+
+  /* Waste Management Hero Responsive */
+  .wasteHeroContainer {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .wasteHeroTitle {
+    font-size: var(--fs-2xl);
+  }
+
+  .wasteHeroButtons {
+    flex-direction: column;
+  }
+
+  .wasteHeroPrimaryBtn,
+  .wasteHeroSecondaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Waste Service Section Responsive */
+  .wasteServiceSection {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .wasteServiceContainer {
+    padding: 0 var(--spacing-md);
+  }
+
+  .wasteServiceTitle {
+    font-size: var(--fs-2xl);
+  }
+
+  /* Cost Reduction Section Responsive */
+  .costReductionSection {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .costReductionGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .costReductionTitle {
+    font-size: var(--fs-xl);
+  }
+
+  .costReductionSubtitle {
+    font-size: var(--fs-lg);
+  }
+
+  /* Strategic Section Responsive */
+  .strategicSection {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .strategicTitle {
+    font-size: var(--fs-xl);
+  }
+
+  .strategicItem {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .strategicItemReverse {
+    direction: ltr;
+  }
+
+  .strategicImage {
+    order: -1;
+  }
+
+  .strategicChecklist {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  /* Clients Section Responsive */
+  .clientsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .clientsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Transformation Section Responsive */
+  .transformationGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .transformationTitle {
+    font-size: var(--fs-2xl);
+  }
+
+  /* Expert Section Responsive */
+  .expertGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expertTitle {
+    font-size: var(--fs-xl);
+  }
+
+  .expertSubtitle {
+    font-size: var(--fs-lg);
+  }
+
+  /* Partners Section Responsive */
+  .partnersGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .partnersLogos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Waste CTA Responsive */
+  .wasteCTATitle {
+    font-size: var(--fs-2xl);
+  }
+}
+
+@media (max-width: 1279px) {
+  .costReductionGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .clientsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expertGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  .strategicItem {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .strategicItemReverse {
+    direction: ltr;
+  }
+
+  .strategicImage {
+    order: -1;
+  }
+
+  .clientsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .transformationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .partnersGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertGrid {
+    grid-template-columns: 1fr;
   }
 }
