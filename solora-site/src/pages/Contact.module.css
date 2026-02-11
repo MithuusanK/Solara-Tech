@@ -8,7 +8,9 @@
   padding: 0 var(--spacing-xl);
 }
 
-/* Contact Section */
+/* ========================
+   Contact Section (Form + Info)
+   ======================== */
 .contactSection {
   padding: var(--spacing-5xl) 0;
   background-color: var(--color-off-white);
@@ -16,29 +18,111 @@
 
 .contactGrid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-4xl);
+  align-items: start;
 }
 
-/* Form Column */
+/* Left Info Column */
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+  padding-top: var(--spacing-lg);
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.infoHeading {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  line-height: var(--lh-tight);
+}
+
+.headingAccent {
+  color: #E87A1E;
+}
+
+.infoDescription {
+  font-size: var(--fs-base);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  max-width: 460px;
+}
+
+/* Feature Badges */
+.featureBadges {
+  display: flex;
+  gap: var(--spacing-2xl);
+}
+
+.featureBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  max-width: 150px;
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.featureIcon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--color-white);
+}
+
+.featureTitle {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.featureDescription {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-600);
+  line-height: var(--lh-normal);
+  margin: 0;
+}
+
+/* Right Form Column */
 .formColumn {
-  background-color: var(--color-white);
+  width: 100%;
+}
+
+.formCard {
+  background-color: var(--color-primary);
   padding: var(--spacing-2xl);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
 }
 
 .formTitle {
   font-size: var(--fs-2xl);
   font-weight: var(--fw-bold);
-  color: var(--color-gray-900);
+  color: var(--color-white);
   margin: 0 0 var(--spacing-sm);
 }
 
 .formDescription {
-  font-size: var(--fs-base);
-  color: var(--color-gray-600);
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: var(--spacing-xl);
+  line-height: var(--lh-normal);
 }
 
 .form {
@@ -60,13 +144,11 @@
 }
 
 .label {
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-medium);
-  color: var(--color-gray-700);
-}
-
-.required {
-  color: #dc2626;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .input,
@@ -75,18 +157,19 @@
   padding: var(--spacing-md);
   font-size: var(--fs-base);
   color: var(--color-gray-800);
-  background-color: var(--color-gray-100);
+  background-color: var(--color-white);
   border: 2px solid transparent;
   border-radius: var(--radius-md);
-  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  font-family: var(--font-primary);
 }
 
 .input:focus,
 .select:focus,
 .textarea:focus {
   outline: none;
-  background-color: var(--color-white);
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.25);
 }
 
 .select {
@@ -100,167 +183,225 @@
 
 .textarea {
   resize: vertical;
-  min-height: 150px;
+  min-height: 120px;
 }
 
 .submitBtn {
   padding: var(--spacing-md) var(--spacing-2xl);
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-secondary);
+  color: var(--color-gray-900);
   font-size: var(--fs-md);
   font-weight: var(--fw-semibold);
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   cursor: pointer;
   transition: background-color var(--transition-fast), transform var(--transition-fast);
-  align-self: flex-start;
+  align-self: center;
+  width: 100%;
+  max-width: 280px;
+  font-family: var(--font-primary);
 }
 
 .submitBtn:hover {
-  background-color: var(--color-primary-dark);
+  background-color: #e09520;
   transform: translateY(-2px);
 }
 
-/* Info Column */
-.infoColumn {
+/* ========================
+   Office / Map Section
+   ======================== */
+.officeSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.officeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-4xl);
+  align-items: center;
+}
+
+.officeInfo {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
 }
 
-.infoCards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
+.officeTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0;
 }
 
-.infoCard {
+.addressBlock {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-md);
-  padding: var(--spacing-lg);
-  background-color: var(--color-white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
 }
 
-.infoIcon {
+.addressIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.addressIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.addressLabel {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.addressText {
+  font-size: var(--fs-base);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+.mapContainer {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.mapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========================
+   Explore Section
+   ======================== */
+.exploreSection {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-off-white);
+}
+
+.exploreHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.exploreTitle {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-md);
+}
+
+.exploreDescription {
+  font-size: var(--fs-base);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.exploreCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.exploreCard {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.exploreCard:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.exploreCardIcon {
   width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   flex-shrink: 0;
 }
 
-.infoIcon svg {
-  width: 24px;
-  height: 24px;
+.exploreCardIcon svg {
+  width: 22px;
+  height: 22px;
   color: var(--color-white);
 }
 
-.infoContent {
+.exploreCardTitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.exploreCardDescription {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-600);
+  line-height: var(--lh-relaxed);
+  margin: 0;
   flex: 1;
 }
 
-.infoTitle {
+.exploreCardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
   font-size: var(--fs-sm);
   font-weight: var(--fw-semibold);
-  color: var(--color-gray-500);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin: 0 0 var(--spacing-xs);
-}
-
-.infoValue {
-  font-size: var(--fs-base);
-  font-weight: var(--fw-medium);
-  color: var(--color-gray-900);
-  margin: 0;
-  transition: color var(--transition-fast);
-}
-
-a.infoValue:hover {
   color: var(--color-primary);
+  text-decoration: none;
+  transition: gap var(--transition-fast);
 }
 
-/* Map */
-.mapContainer {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
-}
-
-.mapPlaceholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-md);
-  color: var(--color-gray-600);
-}
-
-.mapPlaceholder svg {
-  width: 48px;
-  height: 48px;
-}
-
-/* Hours Card */
-.hoursCard {
-  padding: var(--spacing-lg);
-  background-color: var(--color-white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
-
-.hoursTitle {
-  font-size: var(--fs-lg);
-  font-weight: var(--fw-semibold);
-  color: var(--color-gray-900);
-  margin: 0 0 var(--spacing-md);
-}
-
-.hoursList {
-  display: flex;
-  flex-direction: column;
+.exploreCardLink:hover {
   gap: var(--spacing-sm);
 }
 
-.hoursRow {
-  display: flex;
-  justify-content: space-between;
-  font-size: var(--fs-sm);
-  color: var(--color-gray-600);
+.exploreCardLink span {
+  font-size: var(--fs-md);
 }
 
-/* Responsive */
+/* ========================
+   Responsive
+   ======================== */
 @media (max-width: 1023px) {
   .contactGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+  }
+
+  .infoHeading {
+    font-size: var(--fs-3xl);
+  }
+
+  .officeGrid {
     grid-template-columns: 1fr;
     gap: var(--spacing-2xl);
   }
 
-  .infoColumn {
-    order: -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-  }
-
-  .infoCards {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .infoCard {
-    flex: 1;
-    min-width: 200px;
+  .exploreCards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -273,7 +414,16 @@ a.infoValue:hover {
     padding: var(--spacing-3xl) 0;
   }
 
-  .formColumn {
+  .infoHeading {
+    font-size: var(--fs-2xl);
+  }
+
+  .featureBadges {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .formCard {
     padding: var(--spacing-lg);
   }
 
@@ -282,18 +432,26 @@ a.infoValue:hover {
   }
 
   .submitBtn {
-    width: 100%;
+    max-width: 100%;
   }
 
-  .infoColumn {
+  .officeSection {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .officeTitle {
+    font-size: var(--fs-2xl);
+  }
+
+  .exploreSection {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .exploreTitle {
+    font-size: var(--fs-2xl);
+  }
+
+  .exploreCards {
     grid-template-columns: 1fr;
-  }
-
-  .infoCards {
-    flex-direction: column;
-  }
-
-  .infoCard {
-    min-width: auto;
   }
 }
