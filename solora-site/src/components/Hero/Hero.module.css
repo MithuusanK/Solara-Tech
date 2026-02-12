@@ -131,18 +131,29 @@
 
 /* Gradient Box Variant */
 .gradientBoxHero {
-  background-position: right center;
+  background-position: center;
 }
 
 .gradientBox {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark, #1a3d2e) 100%);
-  padding: var(--spacing-xl) var(--spacing-3xl);
+  background: rgba(30, 80, 55, 0.8);
+  padding: var(--spacing-2xl) var(--spacing-3xl);
   border-radius: var(--radius-lg);
-  max-width: 520px;
+  max-width: 700px;
 }
 
 .gradientBox .label {
   color: var(--color-primary-light);
+}
+
+.gradientBox .primaryBtn {
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+  border-color: var(--color-white);
+}
+
+.gradientBox .primaryBtn:hover {
+  background-color: transparent;
+  color: var(--color-white);
 }
 
 /* Responsive */
