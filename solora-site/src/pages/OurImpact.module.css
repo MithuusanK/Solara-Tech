@@ -1,5 +1,6 @@
 .ourImpact {
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Hero Section with Video */
@@ -148,15 +149,6 @@
   background-color: var(--color-white);
 }
 
-.wasteLandscapeAccent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 12px;
-  height: 100%;
-  background-color: #c8dfc0;
-}
-
 .wasteLandscapeTitle {
   text-align: center;
   font-size: var(--fs-3xl);
@@ -207,15 +199,6 @@
   position: relative;
   padding: var(--spacing-5xl) 0;
   background-color: #f0f5ed;
-}
-
-.bcWasteAccent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 12px;
-  height: 100%;
-  background-color: #c8dfc0;
 }
 
 .bcWasteTitle {

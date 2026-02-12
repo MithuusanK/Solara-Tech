@@ -1,34 +1,33 @@
 import { Link } from 'react-router-dom';
 import SlidingCarousel from '../components/Carousel/SlidingCarousel';
-import CTA from '../components/CTA/CTA';
 import styles from './WhatWeDo.module.css';
 
 const WhatWeDo = () => {
   // Services carousel items
   const servicesItems = [
     {
-      pillar: 'Service',
       title: 'Energy Transition Strategy',
-      description: 'Strategic planning and roadmapping for organizations transitioning to sustainable energy sources.',
+      description: 'Helping waste management partners adopt more efficient technologies that convert solid waste into energy.',
       backgroundImage: new URL('../assets/servicesimage1.png', import.meta.url).href,
+      link: '/services/energy-transition-strategy',
     },
     {
-      pillar: 'Service',
-      title: 'Waste Management',
-      description: 'Comprehensive waste stream analysis and optimization for maximum resource recovery.',
+      title: 'Waste Management Planning',
+      description: 'Supporting renewable energy integration, working with local waste management partners, and providing policy guidance for investors.',
       backgroundImage: new URL('../assets/serviceimage2.png', import.meta.url).href,
+      link: '/services/waste-management',
     },
     {
-      pillar: 'Service',
-      title: 'Environmental Analytics',
-      description: 'Data-driven insights and reporting on environmental impact and sustainability metrics.',
+      title: 'Technology Transfer & Integration',
+      description: 'Assisting local and international technology providers entering Canada with regulatory navigation, compliance, and market positioning.',
       backgroundImage: new URL('../assets/serviceimage3.png', import.meta.url).href,
+      link: '/services/technology-evaluation-adoption',
     },
     {
-      pillar: 'Service',
-      title: 'Technology Evaluation',
-      description: 'Assessment and adoption of cutting-edge waste-to-energy and sustainability technologies.',
+      title: 'Environmental Analytics & Insights',
+      description: 'Turn complex environmental data into tool, actionable maps that guide policy, technology, and investments.',
       backgroundImage: new URL('../assets/serviceimage4.png', import.meta.url).href,
+      link: '/services/environmental-analytics',
     },
   ];
 
@@ -136,10 +135,91 @@ const WhatWeDo = () => {
         </div>
       </section>
 
+      {/* Overview of Solora's Approach */}
+      <section className={styles.approachSection}>
+        <div className={styles.container}>
+          <div className={styles.approachHeader}>
+            <h2 className={styles.sectionTitle}>
+              Overview of <span className={styles.highlight}>Solora's Approach</span>
+            </h2>
+            <p className={styles.approachSubtitle}>
+              Solora combines policy expertise, technical analysis, and cross-sector collaboration to support environmental transformation across Canada. Our team brings together municipalities, Indigenous communities, investors, and international technology providers to ensure every solution is proven, compliant, and aligned with long-term sustainability goals.
+            </p>
+          </div>
+          <div className={styles.approachGrid}>
+            <div className={styles.approachItem}>
+              <div className={styles.approachIcon}>
+                <img src={new URL('../assets/L Primary Icon 16.png', import.meta.url).href} alt="" />
+              </div>
+              <div className={styles.approachItemContent}>
+                <h3 className={styles.approachItemTitle}>Waste-to-energy strategy</h3>
+                <p className={styles.approachItemText}>
+                  We help stakeholders explore and adopt technologies that convert organic waste into renewable fuels, reducing landfill use and emissions.
+                </p>
+              </div>
+            </div>
+            <div className={styles.approachItem}>
+              <div className={styles.approachIcon}>
+                <img src={new URL('../assets/L Primary Icon 17.png', import.meta.url).href} alt="" />
+              </div>
+              <div className={styles.approachItemContent}>
+                <h3 className={styles.approachItemTitle}>Clean energy development</h3>
+                <p className={styles.approachItemText}>
+                  We support municipalities and investors in identifying renewable energy pathways that fit local needs and align with regulatory and climate commitments.
+                </p>
+              </div>
+            </div>
+            <div className={styles.approachItem}>
+              <div className={styles.approachIcon}>
+                <img src={new URL('../assets/L Primary Icon 19.png', import.meta.url).href} alt="" />
+              </div>
+              <div className={styles.approachItemContent}>
+                <h3 className={styles.approachItemTitle}>Circular economy solutions</h3>
+                <p className={styles.approachItemText}>
+                  We guide partners in creating systems that repurpose waste into usable resources, strengthening environmental and economic resilience.
+                </p>
+              </div>
+            </div>
+            <div className={styles.approachItem}>
+              <div className={styles.approachIcon}>
+                <img src={new URL('../assets/L Primary Icon 18.png', import.meta.url).href} alt="" />
+              </div>
+              <div className={styles.approachItemContent}>
+                <h3 className={styles.approachItemTitle}>Environmental intelligence</h3>
+                <p className={styles.approachItemText}>
+                  We deliver data-driven insights—such as waste-flow modeling, market forecasting, and ROI analysis—to inform investment and operational decisions.
+                </p>
+              </div>
+            </div>
+            <div className={styles.approachItem}>
+              <div className={styles.approachIcon}>
+                <img src={new URL('../assets/L Primary Icon 20.png', import.meta.url).href} alt="" />
+              </div>
+              <div className={styles.approachItemContent}>
+                <h3 className={styles.approachItemTitle}>Technology transfer & deployment</h3>
+                <p className={styles.approachItemText}>
+                  We help innovative global technologies enter the Canadian market by evaluating feasibility, navigating regulations, and coordinating partnerships.
+                </p>
+              </div>
+            </div>
+            <div className={styles.approachItem}>
+              <div className={styles.approachIcon}>
+                <img src={new URL('../assets/L Primary Icon 21.png', import.meta.url).href} alt="" />
+              </div>
+              <div className={styles.approachItemContent}>
+                <h3 className={styles.approachItemTitle}>Regulatory and permitting support</h3>
+                <p className={styles.approachItemText}>
+                  We assist clients in understanding and completing the necessary permits, compliance steps, and documentation needed to move projects forward smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Carousel */}
       <SlidingCarousel
-        title="Our Services"
-        subtitle="What We Offer"
+        title="End-to-End Waste-to-Energy Transition Coordination & Implementation"
         items={servicesItems}
       />
 
@@ -188,12 +268,22 @@ const WhatWeDo = () => {
       </section>
 
       {/* CTA Section */}
-      <CTA
-        title="Ready to Explore Our Services?"
-        description="Let us help you find the right solution for your sustainability challenges."
-        buttonText="Get in Touch"
-        buttonLink="/contact"
-      />
+      <section className={styles.ctaBanner}>
+        <img
+          src={new URL('../assets/whatwedofinalsection.jpg', import.meta.url).href}
+          alt="Workers at clean energy site"
+          className={styles.ctaBannerImage}
+        />
+        <div className={styles.ctaBannerOverlay}></div>
+        <div className={styles.ctaBannerContent}>
+          <h2 className={styles.ctaBannerTitle}>
+            Let's power Canada's clean-energy evolution together.
+          </h2>
+          <Link to="/contact" className={styles.ctaBannerButton}>
+            Connect with Our Team
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };

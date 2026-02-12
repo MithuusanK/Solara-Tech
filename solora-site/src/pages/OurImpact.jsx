@@ -96,7 +96,6 @@ const OurImpact = () => {
 
       {/* The Waste Landscape Section */}
       <section className={styles.wasteLandscapeSection}>
-        <div className={styles.wasteLandscapeAccent}></div>
         <div className={styles.container}>
           <h2 className={styles.wasteLandscapeTitle}>The Waste Landscape</h2>
           <div className={styles.wasteLandscapeGrid}>
@@ -127,7 +126,6 @@ const OurImpact = () => {
 
       {/* BC Waste Challenge Section */}
       <section className={styles.bcWasteSection}>
-        <div className={styles.bcWasteAccent}></div>
         <div className={styles.container}>
           <h2 className={styles.bcWasteTitle}>British Columbia's Waste Challenge</h2>
           <div className={styles.bcWasteGrid}>
@@ -149,7 +147,6 @@ const OurImpact = () => {
 
       {/* Cost of Inaction Section */}
       <section className={styles.costSection}>
-        <div className={styles.bcWasteAccent}></div>
         <div className={styles.container}>
           <div className={styles.costInner}>
             <h2 className={styles.costTitle}>The Cost of Inaction</h2>
@@ -191,7 +188,6 @@ const OurImpact = () => {
 
       {/* Opportunities Banner */}
       <section className={styles.opportunitiesBanner}>
-        <div className={styles.bcWasteAccent}></div>
         <img
           src={new URL('../assets/resilient-water-infrastructure.jpg', import.meta.url).href}
           alt="Water treatment facility"
@@ -266,7 +262,6 @@ const OurImpact = () => {
 
       {/* SDG Section */}
       <section className={styles.sdgSection}>
-        <div className={styles.bcWasteAccent}></div>
         <div className={styles.container}>
           <div className={styles.sdgTop}>
             <div className={styles.sdgIntro}>
@@ -311,7 +306,6 @@ const OurImpact = () => {
 
       {/* Partnerships Banner */}
       <section className={styles.partnershipsBanner}>
-        <div className={styles.bcWasteAccent}></div>
         <img
           src={new URL('../assets/pexels-olly-3781895.jpg', import.meta.url).href}
           alt="Business partnership handshake"
@@ -327,7 +321,6 @@ const OurImpact = () => {
 
       {/* Our Clients Section */}
       <section className={styles.clientsSection}>
-        <div className={styles.bcWasteAccent}></div>
         <div className={styles.container}>
           <div className={styles.clientsHeader}>
             <h2 className={styles.clientsTitle}>Our Clients Are Part of the Solution</h2>
