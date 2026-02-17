@@ -5,8 +5,15 @@ import heroImage from '../../assets/EA-Image1.png';
 import bannerImg1 from '../../assets/EA-Image4.png';
 import bannerImg2 from '../../assets/EA-Image5.png';
 import serviceImg from '../../assets/EA-Image3.png';
-import tabImg from '../../assets/EA-Image2.png';
 import ctaBgImg from '../../assets/EA-Image6.png';
+
+// Tab-specific images
+import municipalitiesImg from '../../assets/pexels-gerardo-ramirez-898054748-19804230.jpg';
+import engineersImg from '../../assets/pexels-pixabay-257736.jpg';
+import vendorsImg from '../../assets/pexels-fauxels-3184306.jpg';
+import investorsImg from '../../assets/pexels-olia-danilevich-5313361.jpg';
+import indigenousImg from '../../assets/istockphoto-1443576933-612x612.jpg';
+import policyImg from '../../assets/pexels-a-darmel-7641994.jpg';
 
 const CheckCircle = () => (
   <svg className={styles.checkCircleIcon} viewBox="0 0 24 24" fill="none">
@@ -90,6 +97,7 @@ const tabsData = {
       'Strengthen grant applications and climate-action reports with data-backed evidence',
       'Build community trust with simple, public-ready summaries',
     ],
+    image: municipalitiesImg,
   },
   Engineers: {
     title: 'Technical Data for Engineering Excellence',
@@ -99,6 +107,7 @@ const tabsData = {
       'Emissions baselines and GHG reduction projections',
       'Site-specific feasibility and risk assessments',
     ],
+    image: engineersImg,
   },
   Vendors: {
     title: 'Market Intelligence for Technology Providers',
@@ -108,6 +117,7 @@ const tabsData = {
       'Regulatory pathway analysis for technology approvals',
       'Competitive landscape and technology benchmark data',
     ],
+    image: vendorsImg,
   },
   Investors: {
     title: 'Evidence-Based Investment Intelligence',
@@ -117,6 +127,7 @@ const tabsData = {
       'Financial modeling with environmental cost-benefit analysis',
       'Regulatory risk profiling across Canadian jurisdictions',
     ],
+    image: investorsImg,
   },
   'Indigenous Community Leaders': {
     title: 'Locally Relevant Environmental Insights',
@@ -126,6 +137,7 @@ const tabsData = {
       'Local waste and emissions data for community planning',
       'Support for clean-energy and resource recovery proposals',
     ],
+    image: indigenousImg,
   },
   'Policy Analysts': {
     title: 'Data-Driven Policy Insights',
@@ -135,6 +147,7 @@ const tabsData = {
       'Cross-jurisdictional regulatory comparison data',
       'Evidence packages for legislative and regulatory submissions',
     ],
+    image: policyImg,
   },
 };
 
@@ -295,7 +308,7 @@ const EnvironmentalAnalytics = () => {
 
           <div className={styles.tabContent}>
             <div className={styles.tabImage}>
-              <img src={tabImg} alt={activeTab} />
+              <img src={activeTabData.image} alt={activeTab} />
             </div>
             <div className={styles.tabInfo}>
               <h3 className={styles.tabTitle}>{activeTabData.title}</h3>

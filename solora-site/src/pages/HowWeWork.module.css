@@ -276,13 +276,14 @@
 .serviceAreaImage {
   border-radius: var(--radius-lg);
   overflow: hidden;
+  height: 400px;
+  max-height: 400px;
 }
 
 .serviceAreaImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 350px;
 }
 
 .serviceAreaInfo {
@@ -803,7 +804,8 @@
   }
 
   .serviceAreaImage img {
-    min-height: 250px;
+    height: 250px;
+    max-height: 250px;
   }
 
   .approachGrid {
