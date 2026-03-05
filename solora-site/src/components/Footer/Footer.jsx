@@ -105,7 +105,7 @@ const Footer = () => {
 
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            &copy; 2024 Solora. All rights reserved.
+            &copy; 2026 Solora. All rights reserved.
           </p>
         </div>
       </div>

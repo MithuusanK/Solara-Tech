@@ -8,7 +8,8 @@ import contactMapImg from '../assets/ContactImage3.png';
 
 const Contact = () => {
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // Formspree will handle the submission
+    // Just let the default form submission happen
   };
 
   const features = [
@@ -136,7 +137,21 @@ const Contact = () => {
                   Please complete the contact form and our knowledgable staff will contact you directly.
                 </p>
 
-                <form className={styles.form} onSubmit={handleSubmit}>
+                <form 
+                  className={styles.form} 
+                  action="https://formspree.io/f/YOUR_FORM_ID" 
+                  method="POST"
+                  onSubmit={handleSubmit}
+                >
+                  {/* 
+                    IMPORTANT: Replace YOUR_FORM_ID with your actual Formspree form ID
+                    Steps to get your form ID:
+                    1. Go to https://formspree.io
+                    2. Click "New Form"
+                    3. Enter your email: contact@solora-tech.com
+                    4. Copy your form ID (e.g., "mxyzwpva")
+                    5. Replace YOUR_FORM_ID above with your actual form ID
+                  */}
                   <div className={styles.formGroup}>
                     <label htmlFor="fullName" className={styles.label}>
                       FULL NAME
@@ -145,6 +160,19 @@ const Contact = () => {
                       type="text"
                       id="fullName"
                       name="fullName"
+                      className={styles.input}
+                      required
+                    />
+                  </div>
+
+                  <div className={styles.formGroup}>
+                    <label htmlFor="email" className={styles.label}>
+                      EMAIL ADDRESS
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
                       className={styles.input}
                       required
                     />

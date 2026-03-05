@@ -73,7 +73,7 @@ const Navbar = () => {
   const dropdownItems = [
     { path: '/what-we-do', label: 'Services Overview' },
     { path: '/services/energy-transition-strategy', label: 'Energy Transition Strategy' },
-    { path: '/services/waste-management', label: 'Waste Management' },
+    { path: '/services/waste-management', label: 'Waste Management & Planning' },
     { path: '/services/environmental-analytics', label: 'Environmental Analytics & Insights' },
     { path: '/services/technology-evaluation-adoption', label: 'Technology Evaluation & Adoption' },
   ];

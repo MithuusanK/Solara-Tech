@@ -572,7 +572,7 @@ const EnergyTransition = () => {
             <div className={styles.partnersContent}>
               <h2 className={styles.partnersTitle}>Solora's Project Partners</h2>
               <p className={styles.partnersText}>
-                Solora works closely with partners such as Grassland Organics, DEBNA Co., UBC Researchers, and municipal, regional, and Indigenous governments to advance sustainable waste and energy innovations. This partner network is rapidly expanding as we engage with more technology providers across Asia, Europe, and North America.
+                Solora works closely with partners such as Grassland Organics, UBC Researchers, and municipal, regional, and Indigenous governments to advance sustainable waste and energy innovations. This partner network is rapidly expanding as we engage with more technology providers across Asia, Europe, and North America.
               </p>
             </div>
             <div className={styles.partnersLogos}>
@@ -581,9 +581,6 @@ const EnergyTransition = () => {
               </div>
               <div className={styles.partnerLogo}>
                 <img src={grasslandLogo} alt="Grassland Organics" className={styles.partnerLogoImg} />
-              </div>
-              <div className={styles.partnerLogo}>
-                <span className={styles.debnaText}>DEBNA</span>
               </div>
             </div>
           </div>

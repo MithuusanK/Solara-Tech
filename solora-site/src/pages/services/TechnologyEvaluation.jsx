@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './TechnologyEvaluation.module.css';
 import heroImage from '../../assets/banner-tea.png';
+import ctaImage from '../../assets/Gemini_Generated_Image_7bjbj27bjbj27bjb.png';
 import transferImg from '../../assets/image6.png';
 import stakeholder1 from '../../assets/image1.png';
 import stakeholder2 from '../../assets/image2.png';
@@ -222,7 +223,7 @@ export default function TechnologyEvaluation() {
             <div className={styles.partnersContent}>
               <h2 className={styles.partnersTitle}>Solora's Project Partners</h2>
               <p className={styles.partnersText}>
-                Solora works closely with partners such as Grassland Organics, DEBNA Co., UBC Researchers, and municipal, regional, and Indigenous governments to advance sustainable waste and energy innovations. This partner network is rapidly expanding as we engage with more technology providers across Asia, Europe, and North America.
+                Solora works closely with partners such as Grassland Organics, UBC Researchers, and municipal, regional, and Indigenous governments to advance sustainable waste and energy innovations. This partner network is rapidly expanding as we engage with more technology providers across Asia, Europe, and North America.
               </p>
             </div>
             <div className={styles.partnersLogos}>
@@ -232,20 +233,17 @@ export default function TechnologyEvaluation() {
               <div className={styles.partnerLogo}>
                 <img src={grasslandLogo} alt="Grassland Organics" className={styles.partnerLogoImg} />
               </div>
-              <div className={styles.partnerLogo}>
-                <span className={styles.debnaText}>DEBNA</span>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.ctaBanner} style={{ backgroundImage: `url(${heroImage})` }}>
+      <section className={styles.ctaBanner} style={{ backgroundImage: `url(${ctaImage})` }}>
         <div className={styles.ctaBannerOverlay} />
         <div className={`${styles.container} ${styles.ctaBannerContent}`}>
           <h2 className={styles.ctaBannerTitle}>Whether You Are Bringing Technology In or Looking for It — We Are Here to Help</h2>
           <p className={styles.ctaBannerDesc}>Let us explore how the right technology can transform your community, infrastructure, or business.</p>
-          <a href="/contact" className={styles.ctaBannerBtn}>Get in Touch</a>
+          <a href="/contact" className={styles.ctaBannerBtn}>Start Your Sustainability Evaluation</a>
         </div>
       </section>
     </div>
