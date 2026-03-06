@@ -8,7 +8,7 @@ import renewableImg from '../../assets/renewable-energy.png';
 import ppaImg from '../../assets/energy-market.png';
 import districtImg from '../../assets/lowcarbon.png';
 import zeroWasteImg from '../../assets/section6.jpg';
-import comingSoonImg from '../../assets/section4.jpg';
+import comingSoonImg from '../../assets/sludge.jpg';
 import ctaBgImg from '../../assets/section10.jpg';
 import ubcLogo from '../../assets/UBC.png';
 import grasslandLogo from '../../assets/Grassland.png';

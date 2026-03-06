@@ -171,7 +171,7 @@ const WhatWeDo = () => {
             </div>
             <div className={styles.approachItem}>
               <div className={styles.approachIcon}>
-                <img src={new URL('../assets/L Primary Icon 19.png', import.meta.url).href} alt="" />
+                <img src={new URL('../assets/L Primary Icon 18.png', import.meta.url).href} alt="" />
               </div>
               <div className={styles.approachItemContent}>
                 <h3 className={styles.approachItemTitle}>Circular economy solutions</h3>
@@ -182,7 +182,7 @@ const WhatWeDo = () => {
             </div>
             <div className={styles.approachItem}>
               <div className={styles.approachIcon}>
-                <img src={new URL('../assets/L Primary Icon 18.png', import.meta.url).href} alt="" />
+                <img src={new URL('../assets/L Primary Icon 19.png', import.meta.url).href} alt="" />
               </div>
               <div className={styles.approachItemContent}>
                 <h3 className={styles.approachItemTitle}>Environmental intelligence</h3>
