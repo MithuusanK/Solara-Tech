@@ -12,6 +12,7 @@ const Hero = ({
   minHeight = '600px',
   align = 'left',
   variant = 'default',
+  lightOverlay = false,
 }) => {
   // Default placeholder background if no image or video provided
   const bgStyle = backgroundImage && !backgroundVideo
@@ -36,7 +37,7 @@ const Hero = ({
           <source src={backgroundVideo} type="video/mp4" />
         </video>
       )}
-      {variant !== 'gradientBox' && <div className={styles.overlay}></div>}
+      {variant !== 'gradientBox' && <div className={`${styles.overlay} ${lightOverlay ? styles.overlayLight : ''}`}></div>}
       <div className={`${styles.container} ${styles[align]}`}>
         <div className={`${styles.content} ${variant === 'gradientBox' ? styles.gradientBox : ''}`}>
           {label && <span className={styles.label}>{label}</span>}

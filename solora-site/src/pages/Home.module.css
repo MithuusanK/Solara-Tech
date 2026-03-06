@@ -241,7 +241,7 @@
 /* Challenges Section */
 .challenges {
   padding: var(--spacing-4xl) 0;
-  background-color: var(--color-gray-50);
+  background-color: var(--color-white);
 }
 
 .challengesHeader {
@@ -266,7 +266,7 @@
 /* Services Section */
 .services {
   padding: var(--spacing-4xl) 0;
-  background-color: var(--color-white);
+  background-color: var(--color-gray-50);
 }
 
 .servicesHeader {

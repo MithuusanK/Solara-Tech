@@ -114,6 +114,7 @@ const Home = () => {
         primaryCTA={{ text: 'Speak With Our Team', href: '/contact' }}
         backgroundVideo={heroVideo}
         minHeight="700px"
+        variant="gradientBox"
       />
 
       {/* Pioneering Smart Waste Solutions Section */}

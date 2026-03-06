@@ -332,7 +332,7 @@ const OurImpact = () => {
             <div className={styles.clientCard}>
               <div className={styles.clientImageWrapper}>
                 <img
-                  src={new URL('../assets/picture.png', import.meta.url).href}
+                  src={new URL('../assets/state_ready.jpg', import.meta.url).href}
                   alt="Municipal Waste & Infrastructure Leaders"
                 />
               </div>
@@ -341,7 +341,7 @@ const OurImpact = () => {
             <div className={styles.clientCard}>
               <div className={styles.clientImageWrapper}>
                 <img
-                  src={new URL('../assets/state_ready.jpg', import.meta.url).href}
+                  src={new URL('../assets/picture.png', import.meta.url).href}
                   alt="Indigenous & Local Community Leaders"
                 />
               </div>

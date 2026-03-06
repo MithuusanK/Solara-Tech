@@ -30,6 +30,10 @@
   background: var(--overlay-dark);
 }
 
+.overlayLight {
+  background: rgba(0, 0, 0, 0.35);
+}
+
 .container {
   position: relative;
   width: 100%;

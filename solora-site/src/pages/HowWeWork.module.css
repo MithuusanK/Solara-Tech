@@ -84,7 +84,7 @@
 /* Phases Section */
 .phasesSection {
   padding: var(--spacing-5xl) 0;
-  background-color: var(--color-off-white);
+  background-color: var(--color-white);
 }
 
 .phasesHeader {

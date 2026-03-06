@@ -96,7 +96,8 @@ const Contact = () => {
         description="Book a one-on-one session to discuss your projects, challenges, or potential collaborations."
         backgroundImage={contactMapImg}
         minHeight="340px"
-        align="center"
+        align="left"
+        lightOverlay
       />
 
       {/* Main Contact Section */}

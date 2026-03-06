@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import heroImage from '../assets/ContactHero Section.png';
+import logoImg from '../assets/Logo.png';
 import missionImg from '../assets/ContactImage1.jpg';
 import visionImg from '../assets/ContactIamge2.jpg';
 import commitmentImg from '../assets/ContactImage3.png';
@@ -19,14 +20,7 @@ const About = () => {
       <section className={styles.storySection}>
         <div className={styles.container}>
           <div className={styles.storyIconWrapper}>
-            <svg className={styles.storyIcon} viewBox="0 0 120 120" fill="none">
-              <circle cx="60" cy="30" r="20" fill="#F5A623" />
-              <path d="M40 50 L50 40 L60 45 L70 35 L80 42" stroke="#1B5E3C" strokeWidth="3" fill="none" />
-              <path d="M35 55 Q35 80 60 90 Q85 80 85 55" fill="#1B5E3C" />
-              <circle cx="50" cy="75" r="8" fill="#4A7C59" />
-              <circle cx="60" cy="78" r="8" fill="#4A7C59" />
-              <circle cx="70" cy="75" r="8" fill="#4A7C59" />
-            </svg>
+            <img src={logoImg} alt="Solora Logo" className={styles.storyIcon} />
           </div>
           <h2 className={styles.storyTitle}>Our Story</h2>
           
