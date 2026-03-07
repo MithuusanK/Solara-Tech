@@ -188,7 +188,7 @@
 .bannerOverlay {
   position: absolute;
   inset: 0;
-  background: rgba(27, 94, 60, 0.75);
+  background: rgba(146, 146, 146, 0.411);
 }
 
 .bannerText {

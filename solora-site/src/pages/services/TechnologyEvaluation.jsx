@@ -8,6 +8,7 @@ import stakeholder2 from '../../assets/image2.png';
 import stakeholder3 from '../../assets/image3.png';
 import stakeholder4 from '../../assets/image4.png';
 import ubcLogo from '../../assets/ubc.png';
+import connectingIconSvg from '../../assets/L Primary White 4.svg';
 import grasslandLogo from '../../assets/grassland.png';
 
 const CheckCircle = () => (
@@ -24,8 +25,8 @@ const CircularCheck = () => (
 
 const stakeholders = [
   { img: stakeholder1, title: 'Municipal Waste & Infrastructure Leaders', desc: 'We help municipal decision-makers evaluate and adopt technologies that solve solid waste, biosolids, and wastewater challenges.' },
-  { img: stakeholder2, title: 'Indigenous & Local Community Leaders', desc: 'We bring technologies to Indigenous and rural communities, supporting sovereignty and culturally-sensitive adoption strategies.' },
-  { img: stakeholder3, title: 'Policy & Environmental Analysts', desc: 'We offer evidence-based technology reviews, data modeling, and environmental benchmarking for regulatory decision-making.' },
+  { img: stakeholder3, title: 'Indigenous & Local Community Leaders', desc: 'We bring technologies to Indigenous and rural communities, supporting sovereignty and culturally-sensitive adoption strategies.' },
+  { img: stakeholder2, title: 'Policy & Environmental Analysts', desc: 'We offer evidence-based technology reviews, data modeling, and environmental benchmarking for regulatory decision-making.' },
   { img: stakeholder4, title: 'Investors & Engineering Partners', desc: 'We provide technology due diligence, market-readiness assessments, and partnership facilitation for the Canadian market.' },
 ];
 
@@ -49,8 +50,7 @@ export default function TechnologyEvaluation() {
   return (
     <div className={styles.page}>
       <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>
-        <div className={styles.heroOverlay} />
-        <div className={`${styles.container} ${styles.heroContent}`}>
+        <div className={styles.heroInner}>
           <span className={styles.heroLabel}>Technology Evaluation &amp; Adoption</span>
           <h1 className={styles.heroTitle}>Connecting Global Technologies with Canadian Communities</h1>
           <p className={styles.heroDescription}>We evaluate innovative international technologies and match them with the communities that need them most — accelerating adoption for waste, water, energy, and infrastructure challenges.</p>
@@ -65,7 +65,7 @@ export default function TechnologyEvaluation() {
         <div className={styles.container}>
           <div className={styles.transferGrid}>
             <div>
-              <h2 className={styles.transferTitle}>What <span className={styles.highlight}>Technology Transfer</span> <em>Means</em></h2>
+              <h2 className={styles.transferTitle}>What Technology Transfer <em>Means</em></h2>
               <p className={styles.transferText}>Technology transfer is the process of adapting and applying proven solutions — developed internationally — to solve local environmental and infrastructure challenges in Canada.</p>
               <p className={styles.transferText}>At Solora, we serve as a bridge: identifying cutting-edge technologies from around the world and evaluating whether they are the right fit for Canadian municipalities, Indigenous communities, and infrastructure projects.</p>
               <div className={styles.transferQuote}>We do not just find technology — we ensure it works for the land, the people, and the regulations that define each community needs.</div>
@@ -113,9 +113,9 @@ export default function TechnologyEvaluation() {
             </div>
             <div className={styles.connectingIcon}>
               <div className={styles.connectingIconCircle}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><path d="M8 7l4-4 4 4M8 17l4 4 4-4M12 3v18" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                <img src={connectingIconSvg} alt="Solora" className={styles.connectingIconImg} />
               </div>
-              <span className={styles.connectingLabel}>Solora connects both sides</span>
+              <span className={styles.connectingLabel}>Connecting Innovation with Opportunity</span>
             </div>
             <div className={styles.whatWeDoCard}>
               <div className={styles.whatWeDoCardIcon}>

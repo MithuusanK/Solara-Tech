@@ -23,31 +23,22 @@
   min-height: 600px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-.heroOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
-}
-
-.heroContent {
+.heroInner {
   position: relative;
   z-index: 1;
-  max-width: 580px;
-  padding: var(--spacing-5xl) 0;
+  width: 55%;
+  margin-left: var(--spacing-5xl);
+  padding: var(--spacing-3xl);
+  text-align: left;
+  background: rgba(31, 94, 53, 0.82);
+  border-radius: var(--radius-lg);
 }
 
 .heroLabel {
@@ -80,7 +71,8 @@
 
 .heroButtons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
   gap: var(--spacing-md);
 }
 
@@ -88,6 +80,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 14px 28px;
   background-color: var(--color-white);
   color: var(--color-gray-900);
@@ -107,18 +100,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 14px 28px;
-  background-color: var(--color-gray-900);
+  background-color: rgba(31, 94, 53, 0.6);
   color: var(--color-white);
   font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   border-radius: var(--radius-md);
-  border: 2px solid var(--color-gray-900);
+  border: 2px solid var(--color-white);
   transition: all var(--transition-fast);
 }
 
 .btnSecondary:hover {
-  background-color: var(--color-gray-800);
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
 }
 
 /* ===== WHAT TECHNOLOGY TRANSFER MEANS ===== */
@@ -303,24 +298,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-sm);
 }
 
 .connectingIconCircle {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary);
   border-radius: var(--radius-full);
   border: 4px solid var(--color-secondary);
+  position: relative;
+  z-index: 1;
 }
 
-.connectingIconCircle svg {
-  width: 28px;
-  height: 28px;
-  color: var(--color-white);
+.connectingIconImg {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .connectingLabel {
@@ -329,16 +327,8 @@
   text-align: center;
   max-width: 120px;
   line-height: var(--lh-normal);
-}
-
-/* Lines from connecting icon */
-.connectingIcon::before,
-.connectingIcon::after {
-  content: '';
-  width: 40px;
-  height: 3px;
-  background-color: var(--color-secondary);
-  position: absolute;
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== HOW WE SUPPORT STAKEHOLDERS ===== */

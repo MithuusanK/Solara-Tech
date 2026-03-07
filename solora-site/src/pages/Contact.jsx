@@ -260,11 +260,16 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className={styles.addressLabel}>Address</h4>
-                  <p className={styles.addressText}>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=8191+Westminster+Hwy,+Richmond,+BC+V6X+1A7,+Canada"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.addressText}
+                  >
                     8191 Westminster Hwy,<br />
                     Richmond, BC V6X 1A7,<br />
                     Canada
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
