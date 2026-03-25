@@ -7,11 +7,6 @@ import contactHeroBg from '../assets/Contact1.png';
 import contactMapImg from '../assets/ContactImage3.png';
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    // Formspree will handle the submission
-    // Just let the default form submission happen
-  };
-
   const features = [
     {
       icon: (
@@ -140,19 +135,9 @@ const Contact = () => {
 
                 <form 
                   className={styles.form} 
-                  action="https://formspree.io/f/YOUR_FORM_ID" 
+                  action="https://formspree.io/f/xeepqjly" 
                   method="POST"
-                  onSubmit={handleSubmit}
                 >
-                  {/* 
-                    IMPORTANT: Replace YOUR_FORM_ID with your actual Formspree form ID
-                    Steps to get your form ID:
-                    1. Go to https://formspree.io
-                    2. Click "New Form"
-                    3. Enter your email: contact@solora-tech.com
-                    4. Copy your form ID (e.g., "mxyzwpva")
-                    5. Replace YOUR_FORM_ID above with your actual form ID
-                  */}
                   <div className={styles.formGroup}>
                     <label htmlFor="fullName" className={styles.label}>
                       FULL NAME
